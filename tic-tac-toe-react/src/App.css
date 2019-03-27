@@ -1,3 +1,7 @@
+body {
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -23,6 +27,19 @@
   color: #61dafb;
 }
 
+.btn {
+  display: flexbox;
+  height: 80px;
+  width: 100px;
+}
+
+.instructions-text {
+  color: bisque;
+}
+
+.board-grid {
+  display: block;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

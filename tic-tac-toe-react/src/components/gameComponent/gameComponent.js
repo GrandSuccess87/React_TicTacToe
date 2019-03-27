@@ -4,10 +4,10 @@ import '../../App.css';
 class Game extends Component {
     render() {
       return (
-        <div className="App"><br/>
-            <div>
-                Press the "X" or "O" key to play
-            </div>
+        <div className=" App game">
+            <div className="text instructions-text">
+                {/* Press the "X" or "O" key to play */}
+            </div><br/>
         </div>
       );
     }

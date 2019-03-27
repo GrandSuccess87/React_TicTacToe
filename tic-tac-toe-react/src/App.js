@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
-import Game from './components/gameComponent/gameComponent'
-import gameLogo from './Game-Icon.png'; 
+import Header from './components/headerComponent/headerComponent';
+import Game from './components/gameComponent/gameComponent';
+import Board from './components/boardComponent/boardComponent';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <p>
-            Welcome to Tic Tac Toe in ReactJs
-             {/* Edit <code>src/App.js</code> and save to reload.  */}
-          </p>
-          <img src={gameLogo} className="App-logo" alt="logo" />
-          {/* <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click Here to Play!
-          </a> */}
-        <div className="container">
-        <Game />
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <Header />
+          </div>
+        </div> 
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <Game />
+          </div>
         </div>
-        </header>
+        <div className="row">
+          <div className="board-grid col-lg-4 col-md-4 col-sm-4">
+            <Board />
+            <Board />
+            <Board />
+          </div>
+        </div>
       </div>
     );
   }
