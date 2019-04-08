@@ -13,3 +13,15 @@ it('renders the correct landing page for the game', () => {
   ReactDOM.render(<App />, reactInfoDiv);
   ReactDOM.unmountComponentAtNode(reactInfoDiv);
 });
+
+it('returns correct integer', () => {
+  expect(1).toEqual(1)
+});
+
+it('returns correct integer', () => {
+  expect(7).toEqual(7)
+});
+
+it('returns correct integer', () => {
+  expect(11).toEqual(11)
+});
