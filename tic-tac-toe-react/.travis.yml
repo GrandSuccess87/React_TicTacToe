@@ -1,8 +1,9 @@
 language: node_js
 node_js:
 - "stable"
-env: 
-  - node_js
+matrix:
+  include:
+  - env: node_js
 before_script:
   -npm install
 script: 
