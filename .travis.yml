@@ -1,5 +1,27 @@
 language: node_js
 node_js:
   - "stable"
-script: 
-  - vows --spec
+sudo: false
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm test
+  - npm run build
+
+install:
+  - npm install
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep-history: true
+  # api-key:
+  #   secure: $HEROKU_API_KEY
+  app: react-tic-tac-toe
