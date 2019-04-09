@@ -16,9 +16,3 @@ script:
 
 install:
   - npm install
-
-deploy:
-  provider: heroku
-  skip_cleanup: true
-  keep-history: true
-  app: react-tic-tac-toe
